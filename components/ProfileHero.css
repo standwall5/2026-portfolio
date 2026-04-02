@@ -1,0 +1,50 @@
+.social-links a:hover svg {
+  filter: url(#handDrawnNoise);
+  animation: social-hover 1s infinite ease-in-out;
+}
+
+@keyframes social-hover {
+  0% {
+    transform: rotate(0deg);
+    filter: url(#handDrawnNoise);
+  }
+  25% {
+    transform: rotate(-1deg);
+    filter: url(#handDrawnNoise2);
+  }
+  50% {
+    transform: rotate(0deg);
+    filter: url(#handDrawnNoise);
+  }
+  75% {
+    transform: rotate(-1deg);
+    filter: url(#handDrawnNoise2);
+  }
+  100% {
+    transform: rotate(0deg);
+    filter: url(#handDrawnNoise);
+  }
+}
+
+/* @keyframes social-hover {
+  0% {
+    transform: rotate(0deg) translateY(0);
+    filter: url(#handDrawnNoise);
+  }
+  25% {
+    transform: rotate(-1deg) translateY(-2px);
+    filter: url(#handDrawnNoise2);
+  }
+  50% {
+    transform: rotate(0deg) translateY(2px);
+    filter: url(#handDrawnNoise);
+  }
+  75% {
+    transform: rotate(-1deg) translateY(-2px);
+    filter: url(#handDrawnNoise2);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0);
+    filter: url(#handDrawnNoise);
+  }
+} */

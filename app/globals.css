@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #262a34;
+  --accent-hover: #97ff9c;
   --accent: #1bbd60;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
