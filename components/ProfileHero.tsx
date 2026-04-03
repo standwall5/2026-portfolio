@@ -6,7 +6,7 @@ import doodle from "@/public/doodle-name.webp";
 const ProfileHero = () => {
   return (
     <div className="flex items-center gap-14">
-      <div className="relative w-120 aspect-square rounded-full overflow-hidden border-8 border-(--accent)">
+      <div className="relative w-100 aspect-square rounded-full overflow-hidden border-8 border-(--accent)">
         <Image
           src={profile}
           alt=""
@@ -86,7 +86,9 @@ const ProfileHero = () => {
             </svg>
           </a>
         </div>
-        <span className="text-xl">Based in the Philippines</span>
+        <span className="text-xl">
+          Front-End Developer based in the Philippines
+        </span>
       </div>
 
       <svg height="0" width="0">

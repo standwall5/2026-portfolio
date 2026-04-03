@@ -2,8 +2,9 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <section className="w-max">
-      <div className="horizontal-line h-1 w-full rounded bg-(--accent)"></div>
+    <section className="w-m">
+      <h1 className="text-6xl font-bold text-center mb-5">Skills</h1>
+      <div className="horizontal-line h-1 w-[25%] m-auto rounded-full bg-(--accent)"></div>
       <ul className="flex m-12 gap-6 **:w-25 *:fill-(--accent)">
         <li>
           <svg

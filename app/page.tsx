@@ -6,7 +6,10 @@ import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start gap-24 relative p-24">
+    <main
+      id="home"
+      className="flex min-h-screen flex-col items-center justify-start gap-24 relative p-24"
+    >
       <ProfileHero />
       <Projects />
       <Skills />

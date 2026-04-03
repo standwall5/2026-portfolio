@@ -40,8 +40,9 @@ body::after {
     var(--background) 70%,
     rgba(17, 255, 108, 0.11)
   );
-  z-index: 0;
+  z-index: -1;
 }
-main {
-  z-index: 2;
+
+header {
+  z-index: 1;
 }

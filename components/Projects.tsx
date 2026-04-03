@@ -2,7 +2,13 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <section className="flex justify-center items-center overflow-auto">
+    <section
+      id="projects"
+      className="flex flex-col gap-6 items-center justify-center overflow-auto w-max"
+    >
+      <h1 className="text-6xl font-bold">Projects</h1>
+      <div className="horizontal-line h-1 w-[20%] rounded-full bg-(--accent)"></div>
+
       <ul className="w-[90%] flex items-center justify-start gap-8 [&>li]:flex [&>li]:flex-col [&>li]:gap-4 [&>li]:bg-(--card) [&>li]:rounded-4xl [&>li]:p-5 [&>li]:h-148 [&>li]:w-sm [&>li]:shadow-[0px_1px_4px_rgba(0,0,0,0.16)] [&>li>img]:w-lg [&>li>img]:rounded-2xl">
         <li>
           <img src="projects/adeducate.png" alt="AdEducate" />

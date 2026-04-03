@@ -26,10 +26,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <Nav /> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased card`}
       >
+        <Nav />
+
         {children}
       </body>
     </html>
