@@ -2,6 +2,7 @@ import Image from "next/image";
 import profile from "@/public/profile.jpg";
 import "./ProfileHero.css";
 import doodle from "@/public/doodle-name.webp";
+import Skills from "@/components/Skills";
 
 const ProfileHero = () => {
   return (
@@ -30,7 +31,7 @@ const ProfileHero = () => {
           </span>
         </h1>
 
-        <div className="social-links flex gap-5 items-center justify-center *:w-16">
+        <div className="social-links flex gap-5 items-center justify-center *:w-12">
           <a
             href="https://www.github.com/standwall5"
             className="group"
@@ -87,8 +88,11 @@ const ProfileHero = () => {
           </a>
         </div>
         <span className="text-xl">
-          Front-End Developer based in the Philippines
+          Full-Stack Developer based in the Philippines
         </span>
+        {/* <div className="horizontal-line h-1 w-[50%] rounded-full bg-(--accent)"></div> */}
+
+        <Skills />
       </div>
 
       <svg height="0" width="0">

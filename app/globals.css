@@ -17,6 +17,7 @@
   :root {
     --background: #262a34;
     --card: #1a1c2b;
+    --card-hover: #336353;
     --foreground: #ededed;
   }
 }

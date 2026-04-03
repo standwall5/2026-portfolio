@@ -2,10 +2,9 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <section className="w-m">
-      <h1 className="text-6xl font-bold text-center mb-5">Skills</h1>
-      <div className="horizontal-line h-1 w-[25%] m-auto rounded-full bg-(--accent)"></div>
-      <ul className="flex m-12 gap-6 **:w-25 *:fill-(--accent)">
+    <section className="w-max flex flex-col items-center gap-5">
+      {/* <h1 className="text-3xl font-bold text-center">Skills</h1> */}
+      <ul className="flex gap-4 **:w-12 *:fill-(--accent)">
         <li>
           <svg
             version="1.1"
