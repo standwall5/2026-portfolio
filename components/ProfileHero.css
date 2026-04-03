@@ -1,9 +1,9 @@
-.social-links a:hover svg {
+/* .social-links a:hover svg {
   filter: url(#handDrawnNoise);
-  animation: social-hover 1s infinite ease-in-out;
-}
+  animation: handdrawn-hover 1s infinite ease-in-out;
+} */
 
-@keyframes social-hover {
+@keyframes handdrawn-hover {
   0% {
     transform: rotate(0deg);
     filter: url(#handDrawnNoise);
