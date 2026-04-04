@@ -1,19 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Manrope, Ubuntu } from "next/font/google";
+import { Manrope, Ubuntu, Fira_Code, Tiny5 } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/layout/Nav";
 import "@/components/Grainy.css";
 import Footer from "@/components/layout/Footer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -24,6 +14,17 @@ const ubuntu = Ubuntu({
   variable: "--font-ubuntu",
   subsets: ["latin"],
   weight: "500",
+});
+
+const firaCode = Fira_Code({
+  variable: "--font-firacode",
+  subsets: ["latin"],
+});
+
+const tiny5 = Tiny5({
+  variable: "--font-tiny5",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -39,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${manrope.variable} antialiased`}
+        className={`${manrope.variable} ${ubuntu.variable} ${firaCode.variable} ${tiny5.variable} antialiased`}
       >
         <Nav />
 

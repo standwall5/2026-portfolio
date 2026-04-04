@@ -10,8 +10,9 @@
   --accent: #1bbd60;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-manrope);
+  --font-mono: var(--font-firacode);
+  --font-pixel: var(--font-tiny5);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,8 +30,9 @@ body {
   color: var(--foreground);
   font-family: var(--font-manrope);
   position: relative;
+  transition: 0.25s ease-in-out;
 }
-/* body::after {
+body::after {
   content: "";
   position: fixed;
   top: 0;
@@ -43,7 +45,7 @@ body {
     rgba(17, 255, 108, 0.11)
   );
   z-index: -1;
-} */
+}
 
 header {
   z-index: 1;

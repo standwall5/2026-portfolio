@@ -12,3 +12,15 @@
   height: 100%;
   z-index: -1;
 }
+
+.underline {
+  background-color: var(--accent);
+  padding: 2px;
+  border-radius: 100%;
+  animation: underline-animation 1s infinite loop;
+}
+
+@keyframes slide {
+  0% {
+  }
+}

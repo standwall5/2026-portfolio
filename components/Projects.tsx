@@ -6,15 +6,19 @@ const Projects = () => {
       id="projects"
       className="flex flex-col gap-6 items-center justify-center overflow-auto max-w-5xl"
     >
-      <h1 className="text-4xl font-bold self-start border-b-(--accent) border-b-4">
-        Projects
+      <h1 className="text-4xl font-bold self-start">
+        <span className="text-(--accent)">/</span> Projects
       </h1>
       {/* <div className="horizontal-line h-1 w-[8%] rounded-full bg-(--accent) self-start"></div> */}
 
-      <ul className="max-w-5xl self-center flex flex-wrap items-center justify-start gap-8 [&>li]:flex [&>li]:flex-col [&>li]:gap-4 [&>li]:bg-(--card) [&>li]:rounded-4xl [&>li]:p-5 [&>li]:h-95 [&>li]:min-w-10 [&>li]:max-w-78 [&>li]:shadow-[0px_1px_4px_rgba(0,0,0,0.16)] [&>li>img]:w-lg [&>li>div>img]:rounded-2xl [&>li]:hover:-translate-y-2 [&>li]:transition [&>li]:duration-200 [&>li]:hover:bg-(--card-hover) [&>li>div>span]:rounded-sm [&>li]:hover:cursor-pointer">
+      <ul className="max-w-5xl self-center flex flex-wrap items-center justify-start gap-8 [&>li]:flex [&>li]:flex-col [&>li]:gap-4 [&>li]:bg-(--card) [&>li]:rounded-2xl [&>li]:p-5 [&>li]:h-100 [&>li]:min-w-10 [&>li]:max-w-78 [&>li]:shadow-[0px_1px_4px_rgba(0,0,0,0.16)] [&>li>img]:w-lg [&>li>div>img]:rounded-xl [&>li]:hover:-translate-y-2 [&>li]:transition [&>li]:duration-200 [&>li]:hover:bg-(--card-hover) [&>li>div>span]:rounded-sm [&>li]:hover:cursor-pointer">
         <li>
           <div className="img-container aspect-video">
-            <img src="projects/adeducate.png" alt="AdEducate" />
+            <img
+              src="projects/adeducate.png"
+              alt="AdEducate"
+              className="w-full h-full object-cover"
+            />
           </div>
           <h1 className="text-lg font-bold">AdEducate</h1>
           <div className="flex items-center gap-2 *:px-2 *:text-(--accent-text) *:bg-(--accent) *:text-sm *:uppercase *:font-bold">
@@ -27,8 +31,12 @@ const Projects = () => {
           </p>
         </li>
         <li>
-          <div className="img-container">
-            <img src="projects/adeducate.png" alt="AdEducate" />
+          <div className="img-container aspect-video">
+            <img
+              src="projects/adeducate.png"
+              alt="AdEducate"
+              className="w-full h-full object-cover"
+            />
           </div>
           <h1 className="text-lg font-bold">Sandbox - Job Web App</h1>
           <div className="flex items-center gap-2 *:px-2 *:text-(--accent-text) *:bg-(--accent) *:text-sm *:uppercase *:font-bold">
@@ -42,8 +50,12 @@ const Projects = () => {
           </p>
         </li>
         <li>
-          <div className="img-container">
-            <img src="projects/adeducate.png" alt="AdEducate" />
+          <div className="img-container aspect-video">
+            <img
+              src="projects/adeducate.png"
+              alt="AdEducate"
+              className="w-full h-full object-cover"
+            />
           </div>
           <h1 className="text-lg font-bold">Olivia Rodrigo Website</h1>
           <div className="flex flex-wrap items-center gap-2 *:px-2 *:text-(--accent-text) *:bg-(--accent) *:text-sm *:uppercase *:font-bold">
@@ -58,8 +70,12 @@ const Projects = () => {
           </p>
         </li>
         <li>
-          <div className="img-container">
-            <img src="projects/adeducate.png" alt="AdEducate" />
+          <div className="img-container aspect-video">
+            <img
+              src="projects/adeducate.png"
+              alt="AdEducate"
+              className="w-full h-full object-cover"
+            />
           </div>
           <h1 className="text-lg font-bold">Employee Payroll System</h1>
           <div className="flex items-center gap-2 *:px-2 *:text-(--accent-text) *:bg-(--accent) *:text-sm *:uppercase *:font-bold">
@@ -73,7 +89,6 @@ const Projects = () => {
         </li>
       </ul>
     </section>
-    // box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   );
 };
 
