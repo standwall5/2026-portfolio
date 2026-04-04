@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <section className="w-max flex flex-col items-center gap-5">
       {/* <h1 className="text-3xl font-bold text-center">Skills</h1> */}
-      <ul className="flex gap-4 **:w-12 *:fill-(--accent)">
+      <ul className="flex gap-4 **:w-10 *:fill-(--accent)">
         <li>
           <svg
             version="1.1"

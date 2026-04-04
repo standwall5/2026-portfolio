@@ -6,6 +6,7 @@
 
   --foreground: #262a34;
   --accent-hover: #97ff9c;
+  --accent-text: #c8ffa3;
   --accent: #1bbd60;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -17,6 +18,7 @@
   :root {
     --background: #262a34;
     --card: #1a1c2b;
+    --text-subtle: #626783;
     --card-hover: #336353;
     --foreground: #ededed;
   }
@@ -25,11 +27,10 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-
+  font-family: var(--font-manrope);
   position: relative;
 }
-body::after {
+/* body::after {
   content: "";
   position: fixed;
   top: 0;
@@ -42,7 +43,7 @@ body::after {
     rgba(17, 255, 108, 0.11)
   );
   z-index: -1;
-}
+} */
 
 header {
   z-index: 1;

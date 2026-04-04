@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Manrope, Ubuntu } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/layout/Nav";
 import "@/components/Grainy.css";
+import Footer from "@/components/layout/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,6 +13,17 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"],
+});
+
+const ubuntu = Ubuntu({
+  variable: "--font-ubuntu",
+  subsets: ["latin"],
+  weight: "500",
 });
 
 export const metadata: Metadata = {
@@ -27,11 +39,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased card`}
+        className={`${geistSans.variable} ${geistMono.variable} ${manrope.variable} antialiased`}
       >
         <Nav />
 
         {children}
+
+        <Footer />
       </body>
     </html>
   );
