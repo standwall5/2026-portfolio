@@ -1,17 +1,31 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 const Projects = () => {
+  const [expand, setExpand] = useState(false);
+
   return (
     <section
       id="projects"
-      className="flex flex-col gap-6 items-center justify-center overflow-auto max-w-5xl"
+      className="flex flex-col gap-6 items-center justify-center overflow-hidden max-w-5xl"
     >
-      <h1 className="text-4xl font-bold self-start">
-        <span className="text-(--accent)">/</span> Projects
-      </h1>
+      <div className="w-full flex justify-between self-start -mb-4">
+        <h1 className="w-full text-4xl font-bold ">
+          <span className="text-(--accent)">/</span> Projects{" "}
+        </h1>
+        <span
+          onClick={() => setExpand((prev) => !prev)}
+          className={`text-5xl font-bold mr-5 hover:cursor-pointer leading-[-2] duration-200 ease-in-out ${expand === true ? "rotate-0 text-(--accent) hover:text-(--accent-hover)" : "rotate-180 translate-y-[-10%] hover:text-(--accent)"} `}
+        >
+          ^
+        </span>
+      </div>
       {/* <div className="horizontal-line h-1 w-[8%] rounded-full bg-(--accent) self-start"></div> */}
 
-      <ul className="max-w-5xl self-center flex flex-wrap items-center justify-start gap-8 [&>li]:flex [&>li]:flex-col [&>li]:gap-4 [&>li]:bg-(--card) [&>li]:rounded-2xl [&>li]:p-5 [&>li]:h-100 [&>li]:min-w-10 [&>li]:max-w-78 [&>li]:shadow-[0px_1px_4px_rgba(0,0,0,0.16)] [&>li>img]:w-lg [&>li>div>img]:rounded-xl [&>li]:hover:-translate-y-2 [&>li]:transition [&>li]:duration-200 [&>li]:hover:bg-(--card-hover) [&>li>div>span]:rounded-sm [&>li]:hover:cursor-pointer">
+      <ul
+        className={`max-w-5xl w-full self-center flex flex-wrap items-center justify-start gap-8 [&>li]:flex [&>li]:flex-col [&>li]:gap-4 [&>li]:bg-(--card) [&>li]:rounded-2xl [&>li]:p-5 [&>li]:h-100 [&>li]:min-w-10 [&>li]:max-w-78 [&>li]:shadow-[0px_1px_4px_rgba(0,0,0,0.16)] [&>li>img]:w-lg [&>li>div>img]:rounded-xl [&>li]:hover:-translate-y-2 [&>li]:transition [&>li]:duration-200 [&>li]:hover:bg-(--card-hover) [&>li>div>span]:rounded-sm [&>li]:hover:cursor-pointer overflow-hidden duration-250 ease-in-out -mt-5 [&>li]:z-15 [&>li]:mt-2 ${expand === true ? "max-h-210" : "max-h-104 "}`}
+      >
         <li>
           <div className="img-container aspect-video">
             <img

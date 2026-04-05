@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/layout/Nav";
 import "@/components/Grainy.css";
 import Footer from "@/components/layout/Footer";
+import FontSelector from "@/components/FontSelector";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -45,6 +46,9 @@ export default function RootLayout({
         <Nav />
 
         {children}
+        <div className="w-max m-auto mb-20">
+          <FontSelector />
+        </div>
 
         <Footer />
       </body>
