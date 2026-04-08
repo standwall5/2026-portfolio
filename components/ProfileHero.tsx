@@ -19,7 +19,10 @@ import Pup from "./icons/Pup";
 const ProfileHero = () => {
   return (
     <div className="flex items-center justify-center gap-14">
-      <div className="relative w-70 h-80 rounded-2xl overflow-hidden">
+      <div
+        className="relative w-70 h-80 rounded-2xl overflow-hidden shadow-[0px_1px_4px_rgba(0,0,0,0.16)"
+        id="profile-pic-container"
+      >
         <Image
           src={profile}
           alt=""

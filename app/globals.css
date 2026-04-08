@@ -2,8 +2,10 @@
 
 :root {
   --background: #ffffff;
-  --card: #d0e2d7;
-
+  --card: #73d397;
+  --card-hover: #c1e7cf;
+  --card-button: #9dc790;
+  --text-subtle: #c2d8bc;
   --foreground: #262a34;
   --accent-hover: #97ff9c;
   --accent-text: #c8ffa3;
@@ -19,10 +21,32 @@
   :root {
     --background: #262a34;
     --card: #1a1c2b;
+    --card-button: #364153;
     --text-subtle: #626783;
     --card-hover: #336353;
     --foreground: #ededed;
   }
+}
+
+.dark {
+  --background: #262a34;
+  --card: #1a1c2b;
+  --text-subtle: #626783;
+  --card-hover: #336353;
+  --foreground: #ededed;
+}
+/*  */
+.light {
+  --background: #f6fff9;
+  --card: #d8dfd8;
+  --card-hover: #c1e7cf;
+  --card-button: #a5d397;
+  --foreground: #262a34;
+  --accent-hover: #97ff9c;
+  --accent-text: #c8ffa3;
+  --text-subtle: #626783;
+
+  --accent: #3ad47d;
 }
 
 ::-webkit-scrollbar {
