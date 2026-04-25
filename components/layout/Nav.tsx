@@ -24,7 +24,7 @@ const Nav = () => {
     document.documentElement.classList.remove("dark", "light");
     document.documentElement.classList.add(theme);
     localStorage.setItem("theme", theme);
-  }, []);
+  }, [theme]);
 
   return (
     <header>
@@ -53,7 +53,7 @@ const Nav = () => {
             </a>
           </li>
           <li onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-            {theme === "dark" ? <IconMoon size={32} /> : <IconSun size={32} />}
+            {theme === "dark" ? <IconSun size={32} /> : <IconMoon size={32} />}
           </li>
         </ul>
       </nav>
