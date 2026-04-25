@@ -51,7 +51,7 @@ const ProfileHero = () => {
             </div>
           </span>
           {/* <span className=" relative">
-            
+
             {/*<Image
               className="absolute opacity-0 md:opacity-100 md:-right-15 md:-top-5 rotate-45"
               src={doodle}
@@ -92,7 +92,7 @@ const ProfileHero = () => {
           <Pup className="w-7" />{" "}
           <span className="flex items-center gap-1">
             Information Technology <IconPointFilled size={12} /> Polytechnic
-            University of the Philippines '26
+            University of the Philippines &apos;26
           </span>
         </span>
       </div>

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { House, FolderOpenDot } from "lucide-react";
-import { IconMoon, IconSun } from "@tabler/icons-react";
+import { IconMoon, IconPhone, IconSun } from "@tabler/icons-react";
 
 const Nav = () => {
   const [theme, setTheme] = useState(() => {
@@ -43,6 +43,11 @@ const Nav = () => {
           <li>
             <a href="#projects">
               <FolderOpenDot size={32} />
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <IconPhone size={32} />
             </a>
           </li>
           <li onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
