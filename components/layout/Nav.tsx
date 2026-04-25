@@ -5,12 +5,14 @@ import { House, FolderOpenDot } from "lucide-react";
 import { IconMoon, IconPhone, IconSun } from "@tabler/icons-react";
 
 const Nav = () => {
-  const [theme, setTheme] = useState(() => {
+  const [theme, setTheme] = useState<"dark" | "light">(() => {
+    // Check if window is defined (to avoid SSR issues)
+    if (typeof window === "undefined") return "light";
+
     // Try localStorage first (if persisting theme)
     const localTheme = localStorage.getItem("theme");
     if (localTheme === "dark" || localTheme === "light") return localTheme;
 
-    // Otherwise, detect OS preference
     const prefersDark = window.matchMedia(
       "(prefers-color-scheme: dark)",
     ).matches;
@@ -22,7 +24,7 @@ const Nav = () => {
     document.documentElement.classList.remove("dark", "light");
     document.documentElement.classList.add(theme);
     localStorage.setItem("theme", theme);
-  }, [theme]);
+  }, []);
 
   return (
     <header>
