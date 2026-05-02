@@ -19,11 +19,11 @@ const ComponentName = () => {
     <section className="mt-10">
       <h1
         id="visits"
-        className="relative text-(--accent) font-bold text-4xl text-center"
+        className="text-(--accent) font-bold text-4xl text-center"
       >
         {views ?? "-"}{" "}
-        <span className="absolute bottom-0 ml-2 text-sm text-gray-400">
-          views
+        <span className="ml-2 text-sm text-gray-400">
+          total site views
         </span>
       </h1>
     </section>
