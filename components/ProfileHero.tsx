@@ -45,7 +45,7 @@ const ProfileHero = () => {
                 <IconBrandGithub />
               </a>
 
-              <a href="" className="group">
+              <a href="https://www.linkedin.com/in/john-patrick-s-48703524a/" className="group">
                 <IconBrandLinkedin />
               </a>
             </div>

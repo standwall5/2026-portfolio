@@ -12,7 +12,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://www.linkedin.com/in/john-patrick-s-48703524a/">
             <IconBrandLinkedin />
           </a>
         </li>
