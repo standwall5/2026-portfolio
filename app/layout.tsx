@@ -32,6 +32,10 @@ const tiny5 = Tiny5({
 export const metadata: Metadata = {
   title: "John Patrick Salen",
   description: "Portfolio of John Patrick Salen",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
